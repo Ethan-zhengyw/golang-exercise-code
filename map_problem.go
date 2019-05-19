@@ -23,6 +23,7 @@ func main() {
     s3 := "aabcdeefghijjke"  // --> efghij
     s4 := ""  // --> ""
     s5 := "1234567890abcde"  // --> "1234567890abcde"
+    s6 := "试试看支不支持中文"
 
     fmt.Println(s1, s2, s3)
 
@@ -32,5 +33,6 @@ func main() {
         findLongestNotRepeatedSubString(s3),
         findLongestNotRepeatedSubString(s4),
         findLongestNotRepeatedSubString(s5),
+        findLongestNotRepeatedSubString(s6),
     )
 }
