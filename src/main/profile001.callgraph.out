@@ -1,0 +1,217 @@
+positions: instr line
+events: cpu(ms)
+
+ob=(1) main
+fl=(1) /Users/zhengyiwang/Documents/01_Personal/01_Project/00_Github/golang-exercise-code/src/main/main.go
+fn=(1) main.loop
+0x10ccd06 11 3040
+
+ob=(1)
+fl=(1)
+fn=(2) main.loopA
++160 20 1450
+
+ob=(1)
+fl=(1)
+fn=(3) main.loopB
++128 26 1390
+
+ob=(1)
+fl=(2) /usr/local/go/src/runtime/sys_darwin.go
+fn=(4) runtime.nanotime1
+-508111 284 330
+
+ob=(1)
+fl=(3) /usr/local/go/src/runtime/preempt_amd64.s
+fn=(5) runtime.asyncPreempt
++88073 7 50
+* 7 40
+* 7 40
+
+ob=(1)
+fl=(2)
+fn=(6) runtime.usleep
+-88304 263 20
+
+ob=(1)
+fl=(2)
+fn=(7) runtime.kevent
++1192 379 10
+
+ob=(1)
+fl=(1)
+fn=(1)
++506865 11 10
+
+ob=(1)
+fl=(4) /usr/local/go/src/runtime/netpoll_kqueue.go
+fn=(8) runtime.netpoll
+-644604 127 0
+cfl=(2)
+cfn=(7)
+calls=0 -506865 379
+* * 10
+
+ob=(1)
+fl=(5) /usr/local/go/src/runtime/proc.go
+fn=(9) runtime.main
++24251 204 0
+cfl=(1)
+cfn=(10) main.main
+calls=0 +645160 49
+* * 6020
+
+ob=(1)
+fl=(5)
+fn=(11) runtime.mstart
++10909 1137 0
+cfl=(5)
+cfn=(12) runtime.mstart1
+calls=0 +11135 1172
+* * 350
+
+ob=(1)
+fl=(5)
+fn=(12)
++226 1172 0
+cfl=(5)
+cfn=(13) runtime.sysmon
+calls=0 +33869 4634
+* * 330
+cfl=(5)
+cfn=(13)
+calls=0 +33863 4633
+* * 20
+
+ob=(1)
+fl=(5)
+fn=(14) runtime.findrunnable
++10845 2434 0
+cfl=(4)
+cfn=(8)
+calls=0 -35386 127
+* * 10
+
+ob=(1)
+fl=(5)
+fn=(15) runtime.schedule
++3954 2669 0
+cfl=(5)
+cfn=(14)
+calls=0 * 2434
+* * 10
+
+ob=(1)
+fl=(5)
+fn=(16) runtime.park_m
++1446 2837 0
+cfl=(5)
+cfn=(15)
+calls=0 * 2669
+* * 10
+
+ob=(1)
+fl=(5)
+fn=(13)
++17392 4633 0
+cfl=(2)
+cfn=(6)
+calls=0 +84916 263
+* * 20
+
+ob=(1)
+fl=(6) /usr/local/go/src/runtime/time_nofake.go
+fn=(17) runtime.nanotime
++6 19 0
+cfl=(2)
+cfn=(4)
+calls=0 +67755 284
+* * 330
+
+ob=(1)
+fl=(5)
+fn=(13)
+* 4634 0
+cfl=(6)
+cfn=(17)
+calls=0 * 19
+* * 330
+
+ob=(1)
+fl=(7) /usr/local/go/src/runtime/asm_amd64.s
+fn=(18) runtime.mcall
++143304 318 0
+cfl=(5)
+cfn=(16)
+calls=0 -17398 2837
+* * 10
+
+ob=(1)
+fl=(1)
+fn=(1)
++432267 11 0
+cfl=(3)
+cfn=(19) runtime.asyncPreempt [3/3]
+calls=0 +12518 7
+* * 40
++35 14 0
+cfl=(1)
+cfn=(2)
+calls=0 +161 20
+* * 1450
+cfl=(1)
+cfn=(2)
+calls=0 +160 20
+* * 40
++14 15 0
+cfl=(1)
+cfn=(3)
+calls=0 +254 26
+* * 1390
+cfl=(1)
+cfn=(3)
+calls=0 +253 26
+* * 50
+
+ob=(1)
+fl=(1)
+fn=(2)
++111 20 0
+cfl=(3)
+cfn=(20) runtime.asyncPreempt [2/3]
+calls=0 -419798 7
+* * 40
+
+ob=(1)
+fl=(1)
+fn=(3)
++128 26 0
+cfl=(3)
+cfn=(21) runtime.asyncPreempt [1/3]
+calls=0 -419909 7
+* * 50
+
+ob=(1)
+fl=(1)
+fn=(10)
++272 49 0
+cfl=(1)
+cfn=(1)
+calls=0 -287 11
+* * 3040
+cfl=(1)
+cfn=(1)
+calls=0 -253 14
+* * 1490
+cfl=(1)
+cfn=(1)
+calls=0 -239 15
+* * 1440
+cfl=(1)
+cfn=(1)
+calls=0 -288 11
+* * 40
+cfl=(1)
+cfn=(1)
+calls=0 -284 11
+* * 10
